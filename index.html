@@ -66,6 +66,47 @@
                             <use href="./img/icons.svg#icon-close"></use>
                         </svg>
                     </button>
+                    <form action="#" class="modal-form">
+                        <label class="modal-form-field">
+                            Имя
+                            <span class="modal-input-wrapper">
+                                <input type="text" class="modal-input" name="user-name" required autofocus
+                                    minlength="2">
+                                <svg class="icon-name" width="12" height="12">
+                                    <use href="./img/icons.svg#icon-name"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="modal-form-field">
+                            Телефон
+                            <span class="modal-input-wrapper">
+                                <input type="tel" class="modal-input" name="user-tel" required>
+                                <svg class="icon-tel" width="13" height="13">
+                                    <use href="./img/icons.svg#icon-tel"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="modal-form-field">
+                            Комментарий
+                            <span class="modal-input-wrapper">
+                                <input type="email" class="modal-input" name="user-email">
+                                <svg class="icon-email" width="15" height="12">
+                                    <use href="./img/icons.svg#icon-email"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <textarea name="modal-user-coment" class="modal-user-coment"
+                            placeholder="Введите текст"></textarea>
+                        <label for="accept-policy" class="modal-checkbox-lable">
+                            Соглашаюсь с рассылкой и принимаю &nbsp
+                            <a href="#" class="policy-link link">Условия договора</a>
+                        </label>
+                        <input class="modal-checkbox" type="checkbox" id="accept-policy" required>
+
+                        <button class="modal-form-submit" type="submit">Отправить</button>
+
+
+                    </form>
                 </div>
             </div> -->
         </section>
@@ -386,7 +427,7 @@
                 </address>
             </div>
             <div class="footer-links">
-                <p class="footer-subtitle">присоединяйтесь</p>
+                <p class="footer-subtitle">Присоединяйтесь</p>
                 <ul class="footer-social-list list">
                     <li class="footer-social-item">
                         <a href="" class="footer-social-link link">
