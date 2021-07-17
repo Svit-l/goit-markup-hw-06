@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Svitlana Lozovenko">
-    <meta name="description" content="GoIT-training. Homework 5. Page 1 of 2">
+    <meta name="description" content="GoIT-training. Homework 6. Page 1 of 2">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -66,7 +66,7 @@
                         </svg>
                     </button>
                     <form action="#" class="modal-form">
-                        <label class="modal-form-label">
+                        <label class="modal-input-label">
                             Имя
                             <span class="modal-input-wrapper">
                                 <input type="text" class="modal-input" name="user-name" required autofocus minlength="2"
@@ -76,7 +76,7 @@
                                     </svg></span>
                             </span>
                         </label>
-                        <label class="modal-form-label">
+                        <label class="modal-input-label">
                             Телефон
                             <span class="modal-input-wrapper">
                                 <input type="tel" class="modal-input" name="user-tel" required
@@ -86,7 +86,7 @@
                                     </svg></span>
                             </span>
                         </label>
-                        <label class="modal-form-label">
+                        <label class="modal-input-label">
                             Почта
                             <span class="modal-input-wrapper">
                                 <input type="email" class="modal-input" name="user-email">
@@ -95,17 +95,19 @@
                                     </svg></span>
                             </span>
                         </label>
-                        <label class="modal-form-label">
+                        <label class="modal-textarea-label">
                             Комментарий
                             <textarea name="modal-user-coment" class="modal-user-coment"
                                 placeholder="Введите текст"></textarea>
                         </label>
-                        <label for="accept-policy" class="modal-checkbox-lable">
-                            Соглашаюсь с рассылкой и принимаю &nbsp
-                            <a href="#" class="policy-link link">Условия договора</a>
-                        </label>
-                        <input class="modal-checkbox" type="checkbox" id="accept-policy" required>
-
+                        <div class="modal-check-wrap">
+                            <input class="modal-checkbox" name="modal-checkbox" type="checkbox" id="accept-policy"
+                                required>
+                            <label for="accept-policy" class="modal-checkbox-lable">
+                                Соглашаюсь с рассылкой и принимаю &nbsp;
+                                <a href="#" class="policy-link">Условия договора</a>
+                            </label>
+                        </div>
                         <button class="modal-form-submit modal-btn" type="submit">Отправить</button>
                     </form>
                 </div>
@@ -463,7 +465,9 @@
             <form class="footer-form" action="#">
                 <p class="footer-subtitle">Подпишитесь на рассылку</p>
                 <div class="footer-mailing-wrap">
-                    <input type="email" class="footer-mailing-field" name="mailing" placeholder="E-mail" required>
+                    <label class="footer-mailing-label">
+                        <input type="email" class="footer-mailing-field" name="mailing" placeholder="E-mail" required>
+                    </label>
                     <button type="submit" class="footer-mailing-btn"><span
                             class="footer-btn-text">Подписаться</span><svg class="footer-mailing-icon">
                             <use href="./img/icons.svg#icon-send"></use>
