@@ -833,11 +833,10 @@ body {
   transition: var(--transition-border);
 }
 
-/* .footer-mailing-field:focus,
 .footer-mailing-field:hover {
   border-color: var(--accent-color);
   outline: none;
-} */
+}
 
 .footer-mailing-field::placeholder {
   color: rgba(255, 255, 255, 0.6);
